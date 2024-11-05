@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #7714b08f;
+    /* Light purple background */
+}
+
+.calculator {
+    width: 353px;
+    background: linear-gradient(135deg, #553e86, #863c96);
+    /* Dark purple to lighter purple gradient */
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+#display {
+    width: 100%;
+    height: 70px;
+    font-size: 1.575em;
+    text-align: right;
+    border: none;
+    padding: 10.5px;
+    border-radius: 6px;
+    margin-bottom: 21px;
+    color: #2a2929;
+    background-color: #ddc9f1;
+    /* Light purple for the display */
+}
+
+.num-pad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10.5px;
+}
+
+button {
+    width: 100%;
+    height: 63px;
+    font-size: 1.47em;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    background-color: #8d79bc;
+    /* Default button purple */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8a75b4;
+}
+
+button:active {
+    background-color: #574282;
+}
+
+button:nth-child(4n) {
+    /* Operator buttons */
+    background-color: #b394d4;
+    /* Lighter purple for operator buttons */
+}
+
+button:nth-child(4n):hover {
+    background-color: #c1a1de;
+}
+
+button:nth-child(4n):active {
+    background-color: #9f85c2;
+}
+
+/* Style for "AC" button */
+button:first-child {
+    background-color: #8a5b9e;
+    /* Darker purple for the "AC" button */
+}
+
+button:first-child:hover {
+    background-color: #a26fb6;
+}
+
+button:first-child:active {
+    background-color: #7d4694;
+}
