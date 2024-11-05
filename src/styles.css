@@ -10,13 +10,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #7714b08f;
-    /* Light purple background */
 }
 
 .calculator {
     width: 353px;
     background: linear-gradient(135deg, #553e86, #863c96);
-    /* Dark purple to lighter purple gradient */
     border-radius: 12px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 30px;
@@ -33,7 +31,6 @@ body {
     margin-bottom: 21px;
     color: #2a2929;
     background-color: #ddc9f1;
-    /* Light purple for the display */
 }
 
 .num-pad {
@@ -51,7 +48,6 @@ button {
     color: white;
     cursor: pointer;
     background-color: #8d79bc;
-    /* Default button purple */
     transition: background-color 0.3s;
 }
 
@@ -64,9 +60,7 @@ button:active {
 }
 
 button:nth-child(4n) {
-    /* Operator buttons */
     background-color: #b394d4;
-    /* Lighter purple for operator buttons */
 }
 
 button:nth-child(4n):hover {
@@ -77,10 +71,9 @@ button:nth-child(4n):active {
     background-color: #9f85c2;
 }
 
-/* Style for "AC" button */
+
 button:first-child {
     background-color: #8a5b9e;
-    /* Darker purple for the "AC" button */
 }
 
 button:first-child:hover {

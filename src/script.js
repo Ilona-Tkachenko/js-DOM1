@@ -15,7 +15,7 @@ function appendNumber(number) {
 function appendOperator(operator) {
     const lastChar = display.value.slice(-1);
     if ('+-*/'.includes(lastChar)) {
-        display.value = display.value.slice(0, -1); // Replace last character if it’s an operator
+        display.value = display.value.slice(0, -1); 
     }
     display.value += operator;
 }
